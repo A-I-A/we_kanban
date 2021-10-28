@@ -2,5 +2,10 @@
   <% @boards.each do |board| %> 
     <p> 
       <%= board.name %>
+      <% board.lists.each do |list| %>
+        <p>
+            <%= list.name %>
+        </p>
+        <% end %>
     </p>
   <% end %>
